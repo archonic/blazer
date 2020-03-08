@@ -1,6 +1,6 @@
 module Blazer
   class Engine < ::Rails::Engine
-    # isolate_namespace Blazer
+    isolate_namespace Blazer
 
     initializer "blazer" do |app|
       if defined?(Sprockets) && Sprockets::VERSION >= "4"
